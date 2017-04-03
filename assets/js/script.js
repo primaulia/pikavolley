@@ -1,5 +1,5 @@
 var Shape = require('./shape.js')
-var Pikachu = require('./shape.js')
+var Pikachu = require('./pikachu.js')
 var ball = require('./ball')
 
 $(function () {
@@ -16,10 +16,13 @@ $(function () {
   // Main Shape Contructor & Proto
 
 
+
   // Main Shape Pikachu & Proto
 
 
   // Main Shape Ball & Proto
+
+
 
   // Ball.prototype.checkColission = function () {
   //   if (this.positionY >= this.edgeBottom) this.hitBottom = true
@@ -44,26 +47,6 @@ $(function () {
   //       ctx.beginPath();
   //       ctx.arc(x,y,5,0,Math.PI*2);
   //       ctx.fill();
-
-  Ball.prototype.arcTo = function (x, y) {
-    this.positionX += x
-    this.positionY += y
-  }
-
-  Ball.prototype.move = function (modifier) {
-    var tx = Math.abs((this.speed * modifier) - this.positionX)
-    var ty = Math.abs((this.speed * modifier) - this.positionY)
-    console.log('posX, posY', this.positionX, this.positionY)
-    console.log('tx ty', tx, ty)
-    var dist = Math.sqrt(tx * tx + ty * ty)
-    var velX = (tx / dist) * this.speed * modifier
-    var velY = (ty / dist) * this.speed * modifier
-    this.arcTo(velX, velY)
-  }
-
-  Ball.prototype.hitBottom = function () {
-    return this.positionY >= this.edgeBottom
-  }
 
   // INSTANCE OF ALL CONSTRUCTORS
   // TODO: Must count offset by width and height
