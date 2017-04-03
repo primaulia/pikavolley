@@ -8,9 +8,9 @@ function Shape (positionX, positionY, color, width = 20, height = 20) {
   this.width = width
   this.height = height
   this.edgeLeft = 0
-  this.edgeRight = canvasWidth - this.width
-  this.edgeMiddle = (canvasWidth - gutter) / 2
-  this.edgeBottom = canvasHeight - this.height
+  this.edgeRight = script.canvasWidth - this.width
+  this.edgeMiddle = (script.canvasWidth - script.gutter) / 2
+  this.edgeBottom = script.canvasHeight - this.height
   this.edgeTop = 0 + this.height
 }
 Shape.prototype.moveTo = function (x, y) {
@@ -20,5 +20,3 @@ Shape.prototype.moveTo = function (x, y) {
 }
 
 module.exports = Shape
-
-console.log(Shape())

@@ -113,6 +113,8 @@ $(function () {
   var ball = new Ball(200, 200, 'brown')
   var objects = [pikachu1, pikachu2, ball]
 
+  console.log(objects)
+
   // first render of the game
   function render () {
     ctx.clearRect(0, 0, canvasWidth, canvasHeight)
@@ -194,5 +196,11 @@ $(function () {
     main()
   } else {
     alert('sorry canvas is not supported')
+  }
+
+  module.exports = {
+    canvasWidth: canvas.width,
+    canvasHeight: canvas.height,
+    gutter: 360
   }
 })

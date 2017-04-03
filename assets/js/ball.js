@@ -57,5 +57,5 @@ Ball.prototype.hitBottom = function () {
 
 module.exports = Ball
 
-var ball = new Ball(200, 200, 'brown')
-console.log(ball)
+// var ball = new Ball(200, 200, 'brown')
+// console.log(ball)

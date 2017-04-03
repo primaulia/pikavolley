@@ -21,7 +21,6 @@ Pikachu.prototype.moveRight = function (modifier) {
 
 module.exports = Pikachu
 
-var pikachu1 = new Pikachu(0, 400, 'red')
-var pikachu2 = new Pikachu(800, 400, 'blue')
-
-console.log(pikachu1, pikachu2)
+// var pikachu1 = new Pikachu(0, 400, 'red')
+// var pikachu2 = new Pikachu(800, 400, 'blue')
+// console.log(pikachu1, pikachu2)
