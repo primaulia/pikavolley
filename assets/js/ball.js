@@ -1,3 +1,5 @@
+var Shape = require('./shape')
+
 // Main Shape Ball & Proto
 function Ball (positionX, positionY, color) {
   Shape.call(this, positionX, positionY, color)

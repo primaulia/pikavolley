@@ -1,3 +1,4 @@
+var Shape = require('./shape')
 // Main Shape Pikachu & Proto
 function Pikachu (positionX, positionY, color) {
   Shape.call(this, positionX, positionY, color, 100, 100)
